@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<?php echo strlen ($nonce=md5(hash('sha512')));$nonce='a'.$nonce;?>
+<style>
+.<?php echo $nonce;?>{background-color: powderblue;}
+</style>
+</head>
+<body  class="<?php echo $nonce;?>">
+REFRESH PAGE TO CHANGE:  NONCE PHP + CLASS 
+</body>
+</html>
